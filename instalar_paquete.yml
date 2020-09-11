@@ -1,6 +1,5 @@
 ---
-#- hosts: iis
-- hosts: dwlaintsernet03
+- hosts: iis
   gather_facts: no
   vars_files:
     - /opt/devopsys/ansible/inventarios/group_vars/windows.yml
