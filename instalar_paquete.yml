@@ -1,0 +1,13 @@
+---
+#- hosts: iis
+- hosts: dwlaintsernet03
+  gather_facts: no
+  vars_files:
+    - /opt/devopsys/ansible/inventarios/group_vars/windows.yml
+
+  tasks:
+  - name: Instalando Chocolatey
+    win_chocolatey:
+      name: procexp
+      state: present
+...
